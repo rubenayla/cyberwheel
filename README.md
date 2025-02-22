@@ -36,4 +36,4 @@ I plan to use a sealed enclosure for the electronics and batteries, increase the
 ## References
 - [EUC COMPARISON SPREADSHEET](https://onedrive.live.com/view.aspx?resid=5C7F7C96B9CB240D!453580&ithint=file%2Cxlsx&authkey=!AH72KLYXambSLHc&fbclid=IwAR0THVUZS6h6SZOj39XxWlnTjURvUr4NtPwmEg5kYFh51V8Ruyizmrrgx64)
 - To improve on nickel current collectors: https://cellsaviors.com/blog/copper-nickel-sandwich
-- 
+- Check how his airplane is built, could take some ideas: https://www.youtube.com/@wairworthy/shorts

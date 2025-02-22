@@ -1,6 +1,6 @@
 # ToDo
+- logo
 - Buy protection gear
-- buy Fish paper padding?
 - buy Shrink wrap (transparent? inspect all cells, visible from sides)
     - perimeter (2170 cells): 4*21.7 + 4 * 70 = 366.8mm
     - width of flat roll before contraction > 183.4mm to fit

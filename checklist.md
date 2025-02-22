@@ -4,7 +4,13 @@
 - [ ] Fatigue tests have been performed (riding x km in rough terrain should work)
 - [ ] Waterproofing test (pressurized air + and - pressure)
 
+
 # 
 - [ ] The documentation fully explains the maintenance and safety procedures
 
 > Could be cool to record these tests and let people propose and vote new tests to be performed.
+
+
+## To consider
+- [ ] Crazy test: Unplug the battery
+    - It should enter emergency mode, spend all power available for leanback, and start braking with pwm control, dumping the energy slowly to the motor coils, in a stable deceleration with enough leeway to perform balancing.

@@ -121,3 +121,7 @@ For a redundant system, wheel with 2 hub motors in it, with 2 controllers and ba
 - use this fuse? Fuse (135A max peak, allow it for 60 seconds, 270A for 1S)
     - UL Class T fuse 300VAC 200A (High-current, fast acting)
 - Tienda hacen baterias: https://es.wallapop.com/user/hgomezh-426221412
+
+#
+Batería mide 30x9x11, con una caja de esas dimensiones internas me cabe. Algo de margen y poco espumita.
+Caja de vino de madera, milwaukee de plastico adaptada, tubo cuadrado pvc 120mm

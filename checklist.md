@@ -2,7 +2,8 @@
 - [ ] Dynamic forces have been simulated
 - [ ] Dynamic forces have been tested
 - [ ] Fatigue tests have been performed (riding x km in rough terrain should work)
-- [ ] Waterproofing test (pressurized air + and - pressure)
+- [ ] Waterproofing test
+    - The chassis keeps positive and negative pressure inside. The lighting panel should break/melt in case of fire, so it won't be a bomb.
 
 
 # 

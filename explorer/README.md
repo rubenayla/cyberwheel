@@ -7,9 +7,10 @@
 4. [Monetize - Business Model, price and financing](4_monetize.md)
 5. [Storytelling](5_storytelling.md)
 
-# 
-secot investigar
+# Mentoring
+- [Mentoring](./mentoring/README.md)
 
+secot investigar
 canvas modelo de negocio, en blanco
 presentación
 

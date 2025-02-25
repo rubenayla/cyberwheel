@@ -43,7 +43,7 @@ Large in x direction, since we'd need mudguards anyway.
     - JST-PH (or XH. PH has more reliable pin insertion)
 
 # Consider in the future
-- **If a resistor is added to dump energy instead of regen, the euc will work at temperatures of 60ºC instead of 45ºC (Look MolicelP42A Datasheet)**
+- **If a resistor is added to dump energy instead of regen, the euc will work at temperatures of 60ºC instead of 45ºC (Look [MolicelP42A Datasheet](./datasheets/INR-21700-P42A_datasheet_detailed.PDF))**
 - Company: Safe environment and create provoked cutoffs, learn to fall
 - Built-in dashcam
 - Utilizar la placa principal como cargador? No necesitar placa extra. Hay un coche eléctrico que lo hace.

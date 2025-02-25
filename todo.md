@@ -24,6 +24,8 @@
 - Weight at the bottom for stability and low center of mass? I'm not sure if it matters. (Similar to trailer oscillations? Top heavy wheel could oscillate, but bottom heavy just has inertia in the wheel, and can roll easily). With weight at the top of the wheel I might have more leverage to prevent a fall. Experiment.
 - **Why does death wobble happen? Truly understand the mechanics.**
 - Can the slope of the path be inferred from the motor behavior? f(acceleration, speed, current)
+- Is there a way to provide active thermal management to the battery and electronics, for such a vehicle? Peltier?
+- Use the same mosfets of the EUC for charging the battery, so we skip most of the charging circuitry? (When doing regen the motor generates high voltage AC power, which is rectified to the battery. That's basically the same as charging from the wall). Must be safe.
 
 # Tests
 - Try battery on top and electronics at the sides. It's waaay simpler that way. See if it's problematic the high center of mass.

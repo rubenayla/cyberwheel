@@ -125,3 +125,21 @@ For a redundant system, wheel with 2 hub motors in it, with 2 controllers and ba
 #
 Batería mide 30x9x11, con una caja de esas dimensiones internas me cabe. Algo de margen y poco espumita.
 Caja de vino de madera, milwaukee de plastico adaptada, tubo cuadrado pvc 120mm
+
+# 2025-03-07
+VESC en Ubuntu.
+[Little FOCer V3.1 ESC 84V 20S](https://customwheel.shop/high-voltage-vesc-motor-speed-controllers/little-focer-v31-vesc-84v-20s-chassispanel-mount)
+
+https://github.com/vedderb/bldc
+
+VESC Balance Tutorial: https://youtube.com/playlist?list=PLHu3LpOcWhxyn11v0Hx8pvxD1ymyQL4SX&si=PjZiLmkFITcXCBZ9
+
+The latest stable VESC firmware (v5.02) is the recommended choice for your Little FOCer V3.1 ESC. Users have successfully run v5.02 on this model, whereas the beta (v5.03) is more experimental and may not be fully validated for all hardware revisions.
+
+1. Connect Power (xt60) to vesc
+2. USB-C
+3. click auto-connect
+
+Motor config
+Then limits, current voltage, and important RPM to not damage vesc.
+

@@ -1,14 +1,14 @@
-# Propósito
-Redefinir la movilidad personal mediante el desarrollo de monociclos eléctricos seguros, fiables y resistentes, contribuyendo a una sociedad con opciones de transporte más sostenibles, eficientes y accesibles.
+# Propósito (¿Para qué?)
+Marcar un nuevo estándar con monociclos eléctricos diseñados para la libertad absoluta, sin preocupaciones. Queremos que sean seguros, resistentes a cualquier entorno, y fáciles de desmontar para realizar mantenimiento o mejoras, libremente y sin restricciones.
 
-# Misión
-Crear monociclos eléctricos de alta calidad, con un enfoque en seguridad, durabilidad y rendimiento, ofreciendo una alternativa confiable para la movilidad urbana y todo terreno.
+# Misión (Propósito actual. Qué hacemos)
+Diseñar y fabricar monociclos eléctricos de alta calidad, con un enfoque en seguridad, y durabilidad.
 
-# Visión
-Fomentar una movilidad basada en la libertad y la autonomía, ofreciendo vehículos diseñados para durar, fáciles de mantener y mejorar sin restricciones. Queremos una relación cercana con los usuarios, brindando productos sin barreras innecesarias, donde la tecnología sea una herramienta de empoderamiento, no de control.
+# Visión (Meta a futuro. Hacia dónde vamos)
+Queremos involucrar a la comunidad en el proceso de mejora continua, donde el proceso de testing sea completamente abierto y transparente, y los usuarios puedan participar activamente en el desarrollo de nuevos productos.
 
 # Values
-Design based in first principles, with a focus on simplicity and reliability.
+Design based in first principles, with a focus on simplicity and reliability (safety + durability).
 
 # Impacto
 ## Social (3 actitudes)

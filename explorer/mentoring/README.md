@@ -61,9 +61,18 @@ Usuario urbano, joven (20-45 años) y tecnófilo: https://movilidadelectrica.com
 - 
 
 ## Regulaciones DGT
-A partir del 22 de enero de 2024, solo se pueden comercializar en España monociclos eléctricos (y demás VMP) que cumplan con las características técnicas exigidas por la normativa y cuenten con un certificado de circulación expedido conforme al Manual de características de la DGT​. En esencia, los monociclos eléctricos vendidos deben limitarse a una velocidad máxima de 25 km/h (el motor debe dejar de propulsar al superar dicha velocidad) y disponer de sistemas antimanipulación para impedir trucar esa velocidad o la potencia. 
+A partir del 22 de enero de 2024, solo se pueden comercializar en España monociclos eléctricos (y demás VMP) que cumplan con las características técnicas exigidas por la normativa y cuenten con un certificado de circulación expedido conforme al Manual de características de la DGT. En esencia, los monociclos eléctricos vendidos deben limitarse a una velocidad máxima de 25 km/h (el motor debe dejar de propulsar al superar dicha velocidad) y disponer de sistemas antimanipulación para impedir trucar esa velocidad o la potencia. 
 
 Los vehículos que se hayan comercializado antes de la entrada en vigor de esta norma pueden seguir usándose hasta enero de 2027, aunque carezcan de certificado, pero ya no es legal vender modelos nuevos no certificados en 2024 en adelante
 - https://www.lasvocesdelpueblo.com/direccion-general-de-trafico-normativa-patinetes-electricos-y-monociclos-electricos-vmp-certificados/#:~:text=Los%20Veh%C3%ADculos%20de%20Movilidad%20Personal,y%20el%20nivel%20de%20bater%C3%ADa
 - https://www.dgt.es/comunicacion/noticias/vmp-nuevas-reglas-nueva-formacion/#:~:text=Un%20mercado%20en%20expansi%C3%B3n%20y,los%20veh%C3%ADculos%20de%20movilidad%20personal
 
+# Reu 2
+Porcentaje de gente que descarta o quiere probar
+- [ ] pasar canvas y DAFO.
+- [ ] poner en dafo y propuesta de valor, lo de gente que quiere probar
+- [SOW] 2 SOW para 2 lineas accion:
+    - desarrollar prototipo, construirlo y enseñarlo
+    - definir propuesta valor, clientes, canales, dafo
+    - hipótesis negocio: prototipo funcional, existe interés en el mercado
+    - hipótesis prototipo: disponibilidad hardware, método fabricacion resuelto (validar opciones...)

@@ -143,3 +143,6 @@ The latest stable VESC firmware (v5.02) is the recommended choice for your Littl
 Motor config
 Then limits, current voltage, and important RPM to not damage vesc.
 
+---
+Next Level VESC board, noted here
+https://tronicsystems.com/products/x12

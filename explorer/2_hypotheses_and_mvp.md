@@ -52,7 +52,7 @@ Assumption about a thing + proposed solution + expected outcome = Hypothesis, wh
         - Gente curiosa, gente excéptica. Todos querrán probar antes de pagar nada. Para eso la idea de eventos donde les enseñamos gratis y les alquilamos a precio de coste, o a precio que nos de un beneficio, con la opción de probarlo gratis o con descuento si antes ayudan a otras personas a montar. Así se auto-sostiene el evento. Creo que puede ser buen plan de quedada para amigos, como quien va a jugar al paintball o a hacer karts.
     - Modifica el producto o servicio (en base al feedback)
 
-- Prototipo vs MVP:Zapier
+- Prototipo vs MVP:
     - Prototipo prueba conceptos, MVP es la prueba funcional básica.
     - Por ejemplo mi monociclo para testing es un prototipo, no es MVP porque no lo podría vender. Me sirve para validar otras cosas.
     - El MVP vendrá más adelante, donde un cliente lo pueda usar sin tener que saber programarlo, sin miedo a que se moje etc.
@@ -88,6 +88,7 @@ https://www.netsolutions.com/hub/minimum-viable-product/build/
     - Wordpress
     - Weebly
     - Site123
+    - Zapier: Pegamento para conectar las herramientas entre sí
     - Gofundme
     - Google AdWords
     - Facebook Business Manager
@@ -96,5 +97,8 @@ https://www.netsolutions.com/hub/minimum-viable-product/build/
     - Team: Google Workspace + Notion
 
 Cuando los clientes validan las hipótesis, se tiene el business case del MVP.
+
+# Branding
+Brand color: deep teal, #008080
 
 

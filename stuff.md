@@ -146,3 +146,13 @@ Then limits, current voltage, and important RPM to not damage vesc.
 ---
 Next Level VESC board, noted here
 https://tronicsystems.com/products/x12
+## To finally remember the difference between isotype, logotype, isologo, imagotype...
+iso = symbol
+logo = text
+type = meaningless thing to add when we need more roots to form the word
+
+Just symbol: iso -> isotype
+Just text: logo -> logotype
+Symbol and text as single entity: iso + logo -> isologo (not isologotype)
+Symbol + Text together: Just an image -> imagotype
+

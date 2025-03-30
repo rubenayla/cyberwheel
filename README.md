@@ -34,6 +34,21 @@ I plan to use a sealed enclosure for the electronics and batteries, increase the
 
 
 ## References
+- 
 - [EUC COMPARISON SPREADSHEET](https://onedrive.live.com/view.aspx?resid=5C7F7C96B9CB240D!453580&ithint=file%2Cxlsx&authkey=!AH72KLYXambSLHc&fbclid=IwAR0THVUZS6h6SZOj39XxWlnTjURvUr4NtPwmEg5kYFh51V8Ruyizmrrgx64)
 - To improve on nickel current collectors: https://cellsaviors.com/blog/copper-nickel-sandwich
 - Check how his airplane is built, could take some ideas: https://www.youtube.com/@wairworthy/shorts
+- [Balance App Info - VESC](https://vesc-project.com/node/2689)
+    - https://t.me/joinchat/JP0KNxbguWM5KhHrT5_CYA
+    - [Video Tutorial Series](https://www.youtube.com/playlist?list=PLHu3LpOcWhxyn11v0Hx8pvxD1ymyQL4SX)
+- Euc compare:
+    - https://freshlycharged.com/euc-comparison-tool/
+    - https://onedrive.live.com/view.aspx?resid=5C7F7C96B9CB240D%21453580&authkey=!AH72KLYXambSLHc
+- Buy EUC:
+    - https://myewheel.com/
+    - https://www.electricunicycles.eu/product_catalog
+    - https://ewheels.com/pages/parts#products_categories_row_180
+    - 
+- Add safety: https://github.com/thankthemaker/rESCue
+- https://www.instagram.com/eucyou?
+- Fault code list: https://vesc-project.com/node/3941

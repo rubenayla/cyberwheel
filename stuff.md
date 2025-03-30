@@ -40,7 +40,6 @@ Large in x direction, since we'd need mudguards anyway.
 - Connectors
     - XT90S
     - Molex Pico-Clasp (small, locking, populate as many pins as you want)
-    - JST-PH (or XH. PH has more reliable pin insertion)
 
 # Consider in the future
 - **If a resistor is added to dump energy instead of regen, the euc will work at temperatures of 60ºC instead of 45ºC (Look [MolicelP42A Datasheet](./datasheets/INR-21700-P42A_datasheet_detailed.PDF))**
@@ -130,6 +129,8 @@ Caja de vino de madera, milwaukee de plastico adaptada, tubo cuadrado pvc 120mm
 VESC en Ubuntu.
 [Little FOCer V3.1 ESC 84V 20S](https://customwheel.shop/high-voltage-vesc-motor-speed-controllers/little-focer-v31-vesc-84v-20s-chassispanel-mount)
 
+![little focer pinout](stuff/20250325193219.png)
+
 https://github.com/vedderb/bldc
 
 VESC Balance Tutorial: https://youtube.com/playlist?list=PLHu3LpOcWhxyn11v0Hx8pvxD1ymyQL4SX&si=PjZiLmkFITcXCBZ9
@@ -156,3 +157,10 @@ Just text: logo -> logotype
 Symbol and text as single entity: iso + logo -> isologo (not isologotype)
 Symbol + Text together: Just an image -> imagotype
 
+## 2025-03-25
+Using VESC 6.05 in smartphone app (commit e3d25e96)
+PROBLEM! I can configure roll angle errors, but it just continues running with state: fault
+
+
+- try sensorless, see the difference. maybe the hall sensors are bad?
+- 

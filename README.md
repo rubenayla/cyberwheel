@@ -1,7 +1,9 @@
 # CYBERWHEEL
 
 ## Purpose
-Develop open-source Electric Unicycle (EUC) Hardware and Firmware, hopefully achieving products that are simple, reliable, can withstand any environment, and are built to last, while being free of proprietary restrictions, and easy to repair and modify.
+Develop an Electric Unicycle that is truly practical for everyday use: reliable, rain- and impact-resistant, and durable over time.
+
+For this, create an open-source community to design both the Hardware and Firmware, so they can be repaired and modified, free of proprietary restrictions.
 
 ## Goals
 I want to challenge the idea that, if your EUC cuts out, it's your fault. A well designed EUC should never cut power, even if you try. There must be margin for error.

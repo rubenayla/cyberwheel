@@ -68,11 +68,10 @@ Los vehículos que se hayan comercializado antes de la entrada en vigor de esta 
 - https://www.dgt.es/comunicacion/noticias/vmp-nuevas-reglas-nueva-formacion/#:~:text=Un%20mercado%20en%20expansi%C3%B3n%20y,los%20veh%C3%ADculos%20de%20movilidad%20personal
 
 # Reu 2
-Porcentaje de gente que descarta o quiere probar
-- [ ] pasar canvas y DAFO.
-- [ ] poner en dafo y propuesta de valor, lo de gente que quiere probar
 - [SOW] 2 SOW para 2 lineas accion:
     - desarrollar prototipo, construirlo y enseñarlo
     - definir propuesta valor, clientes, canales, dafo
     - hipótesis negocio: prototipo funcional, existe interés en el mercado
     - hipótesis prototipo: disponibilidad hardware, método fabricacion resuelto (validar opciones...)
+
+# Reu 3 --- 2025-03-31

@@ -127,13 +127,7 @@ Caja de vino de madera, milwaukee de plastico adaptada, tubo cuadrado pvc 120mm
 
 # 2025-03-07
 VESC en Ubuntu.
-[Little FOCer V3.1 ESC 84V 20S](https://customwheel.shop/high-voltage-vesc-motor-speed-controllers/little-focer-v31-vesc-84v-20s-chassispanel-mount)
-
 ![little focer pinout](stuff/20250325193219.png)
-
-https://github.com/vedderb/bldc
-
-VESC Balance Tutorial: https://youtube.com/playlist?list=PLHu3LpOcWhxyn11v0Hx8pvxD1ymyQL4SX&si=PjZiLmkFITcXCBZ9
 
 The latest stable VESC firmware (v5.02) is the recommended choice for your Little FOCer V3.1 ESC. Users have successfully run v5.02 on this model, whereas the beta (v5.03) is more experimental and may not be fully validated for all hardware revisions.
 
@@ -163,4 +157,97 @@ PROBLEM! I can configure roll angle errors, but it just continues running with s
 
 
 - try sensorless, see the difference. maybe the hall sensors are bad?
-- 
+
+## 
+- Sensors:
+    - Motor temperatures and voltages
+        - 6 wires: +,-,temp,3halls
+    - Mosfet and pcb temperatures and voltages
+    - Chassis temp
+    - Internal humidity or pressure (detect crashes?)
+    - Measure grounding, isolation?
+
+
+## Pseudocode for the state machine
+def continuous_monitoring():
+```python
+if running:
+    # BATTERY TEMP CHECKS
+    if (T_bat_C < -40) or (T_bat_C > 60): # Discharge temp limits
+        emergency("Battery temperature error") # Hard leanback to 0
+    elif T_bat_C > 40:
+        alert(T_bat_C, "Alert battery too hot") # Show alert, run fan, limit speed (to limit power for a given acceleration)
+    elif T_bat_C < 5:
+        alert(T_bat_C, "Alert battery too cold") # Show alert, run heater, limit speed
+    
+    # MOTOR TEMPERATURE CHECKS
+    if (T_mot > ?):
+        emergency("Motor temperature error")
+    elif (T_mot > ?):
+        alert(T_mot, "Alert motor too hot") # Show alert, limit speed
+    
+    # MOSFET TEMPETAURE CHECKS
+    if (T_mos > ?):
+        emergency("Mosfet temperature error")
+    elif (T_mos > ?):
+        alert(T_mos, "Alert mosfets too hot") # Show alert, limit speed
+    
+    # BATTERY VOLTAGE CHECKS (State Of Charge)
+    if (V_bat > ?):
+        emergency("Battery overvoltage")
+    elif (V_bat > ?):
+        alert(V_bat, "Alert battery overvoltage")
+    
+    # BATTERY CURRENT CHECKS
+    if (I_bat > ?):
+        emergency("Battery overcurrent")
+    elif (I_bat > 135):
+        alert(I_bat, "Alert battery overcurrent")
+    
+    # Alert limiting power when low voltage
+    # Look at INR-21700-P42A_power_pulse.pdf to calculate V_bat and T_bat -> max_current -> max_torque -> max_speed
+    if (V_bat < ? about 2.8)
+        alert(V_bat, "Alert battery undervoltage")
+
+    # TODO undervoltage protection when accelerating?
+elif stopped:
+    if (T_bat_C < -40) or (T_bat_C > 60): # Discharge temp limits
+        emergency("Temperature error")
+    elif charger_connected:
+        if T_bat_C <= 0: # too low
+            activate_heater_from_charger()
+            alert("Too cold to charge. Heating battery...")
+        elif T_bat_C > 40: # too high
+            alert("Cannot charge, too hot. Max cell temp is 45ºC")
+        else:
+            ok # charge at 4.2A max, 4V 88% SOC()
+    else: # charger not connected
+        if T_bat_C <= 0:
+            activate_heater_from_battery()
+            alert("Too cold to run, heating battery...")
+        else:
+            ok # but activate alert to keep heating if close to 0ºC, up to about 10ºC?
+```
+
+## Tyre
+I want a balanced offroad capable 18x3 tire (18 diam, 3 width), with a motor like the C30, 84V, in the range of 2500W
+
+- Consider
+    - Schinko 244, Kenda K262, CST C186 (all
+    14-2,75)
+    - **Kenda K262 14-2,75in rim**
+        - Sherman and EXN, 80€, with 14-2.75 rim, 
+    - **CST C186 14-2,75in rim**
+        - 42€, enduro, trial, with tube, 1.96kg, Brand CST, Profile C186, with 14-2.75 rim, 
+    - **Heidenau K66 80/90-14**, 80mmx72mm-14in
+        - 62€
+    - Michelin City Pro 80/90-14 46P
+        - 32€
+
+## stuff
+- [High Voltage Inter Lock](https://youtu.be/BC1zCC7CeX8)
+
+- V13 parts:
+    - Raptor controller
+    - Potted battery
+    - Redundant Hall sensors

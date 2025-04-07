@@ -4,6 +4,12 @@
 - [ ] Fatigue tests have been performed (riding x km in rough terrain should work)
 - [ ] Waterproofing test
     - The chassis keeps positive and negative pressure inside. The lighting panel should break/melt in case of fire, so it won't be a bomb.
+- [ ] Battery at 100%, go fast and try sudden braking
+    - Does the battery suffer overvoltage?
+    - What is the maximum deceleration achieved? (consider a minimum threshold to validate it)
+    > Alternatives are controlled short of motor wires, without regen. An external resistor (probably better the first approach)
+    > This affects braking power but also ability to ride in <0ºC, where the battery can't charge (the anode gets covered in metallic lithium layer that can cause a short circuit)
+- [ ] Record at x speed and calculate the torque being applied. Must get over a minimum
 
 
 # 

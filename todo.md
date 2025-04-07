@@ -5,9 +5,6 @@
     - perimeter (2170 cells): 4*21.7 + 4 * 70 = 366.8mm
     - width of flat roll before contraction > 183.4mm to fit
 
-## Mentoring
-[Mentoring Tasks](./explorer/mentoring/README.md)
-
 # Issues
 - Can the chassis be done as a single laser-cut bent piece? What about rivetting several ones?
     - Airplane wings use sealants that cure along with rivets. Consider it

@@ -38,21 +38,39 @@ I plan to use a sealed enclosure for the electronics and batteries, increase the
 
 
 ## References
-- 
-- [EUC COMPARISON SPREADSHEET](https://onedrive.live.com/view.aspx?resid=5C7F7C96B9CB240D!453580&ithint=file%2Cxlsx&authkey=!AH72KLYXambSLHc&fbclid=IwAR0THVUZS6h6SZOj39XxWlnTjURvUr4NtPwmEg5kYFh51V8Ruyizmrrgx64)
-- To improve on nickel current collectors: https://cellsaviors.com/blog/copper-nickel-sandwich
-- Check how his airplane is built, could take some ideas: https://www.youtube.com/@wairworthy/shorts
-- [Balance App Info - VESC](https://vesc-project.com/node/2689)
-    - https://t.me/joinchat/JP0KNxbguWM5KhHrT5_CYA
-    - [Video Tutorial Series](https://www.youtube.com/playlist?list=PLHu3LpOcWhxyn11v0Hx8pvxD1ymyQL4SX)
+
 - Euc compare:
     - https://freshlycharged.com/euc-comparison-tool/
-    - https://onedrive.live.com/view.aspx?resid=5C7F7C96B9CB240D%21453580&authkey=!AH72KLYXambSLHc
+    - [EUC COMPARISON SPREADSHEET](https://onedrive.live.com/view.aspx?resid=5C7F7C96B9CB240D!453580&ithint=file%2Cxlsx&authkey=!AH72KLYXambSLHc&fbclid=IwAR0THVUZS6h6SZOj39XxWlnTjURvUr4NtPwmEg5kYFh51V8Ruyizmrrgx64)
 - Buy EUC:
     - https://myewheel.com/
     - https://www.electricunicycles.eu/product_catalog
     - https://ewheels.com/pages/parts#products_categories_row_180
-    - 
+- https://forum.electricunicycle.org/topic/18154-i-made-a-custom-gotway-monster/
+- To improve on nickel current collectors: https://cellsaviors.com/blog/copper-nickel-sandwich
+- Check how his airplane is built, could take some ideas: https://www.youtube.com/@wairworthy/shorts
+- VESC
+    - https://vesc-project.com/
+    - https://github.com/vedderb/bldc
+    - [Balance App Info - VESC](https://vesc-project.com/node/2689)
+        - https://t.me/joinchat/JP0KNxbguWM5KhHrT5_CYA
+        - [VESC Balance Tutorial Playlist](https://youtube.com/playlist?list=PLHu3LpOcWhxyn11v0Hx8pvxD1ymyQL4SX&si=PjZiLmkFITcXCBZ9)
+    - VESC Tool setup tutorial https://youtu.be/lDuV8cnPRmI
+    - Understand how ESC works [https://youtu.be/YV-ee8wA5lI](https://youtu.be/YV-ee8wA5lI)
 - Add safety: https://github.com/thankthemaker/rESCue
 - https://www.instagram.com/eucyou?
 - Fault code list: https://vesc-project.com/node/3941
+- [Little FOCer V3.1 ESC 84V 20S](https://customwheel.shop/high-voltage-vesc-motor-speed-controllers/little-focer-v31-vesc-84v-20s-chassispanel-mount)
+
+- Battery
+    - [Build massive diy battery, high power, good construction](https://youtu.be/QMQYfk2RKtU)
+    - [A very, very detailed video on how I built my battery pack for electric skateboard.](https://youtu.be/7QjO90LG67g)
+    - https://secondlifestorage.com/index.php
+    - https://inventuspower.com/custom-battery-packs/
+    - https://medium.com/tianyechen-portfolio/formula-sae-electric-battery-management-system-df12e000f457
+    - [FS NOTTINGHAM 2020 ACCUMULATOR](https://youtu.be/4xOo8Uv2nHw?si=mMkoztjvpohZPZ4r)
+- https://www.thecotillion.theater/the-blerg-archive/2020/3/22/the-guide-to-electric-unicycle-maintenance-2020-edition
+
+- https://www.instructables.com/DIY-Self-Balancing-One-Wheel-Vehicle/
+- https://ieeexplore.ieee.org/document/7860971
+- https://ieeexplore.ieee.org/document/7861046?section=abstract

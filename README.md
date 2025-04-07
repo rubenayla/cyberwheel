@@ -1,4 +1,6 @@
-# CYBERWHEEL
+<p align="center">
+  <img src="assets/isologo_white.png" alt="Cyberwheel Logo" height="100"/>
+</p>
 
 ## Purpose
 Develop an Electric Unicycle that is truly practical for everyday use: reliable, rain- and impact-resistant, and durable over time.

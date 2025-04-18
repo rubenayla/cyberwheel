@@ -16,6 +16,8 @@
 - Cables de silicona de alta corriente y temperatura
 - Pads protección
 - [Tapa exterior](#tapa-exterior)
+- Lamina termica?
+    > Lo que permite enfriar los mosfets del Little FOCer sin que hagan un corto entre sí
 
 # Herramientas
 - Básicas: multímetro, soldador estaño, flux, limpiadores, radial (discos de corte, desbastado), taladro (brocas metal)

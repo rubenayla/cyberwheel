@@ -17,28 +17,28 @@ More on [requirements](./requirements.md).
 ## Why EUCs?
 EUCs have a significantly bigger wheel than scooters (16 ~ 18"), which makes them more stable (yeah, It's hard to believe, but trust me), specially in rough terrain. They can go up curbs, down stairs, and sometimes even UP stairs. They're very pleasant to ride. Hands free, it feels like you're floating.
 
-They're way easier to carry around, like a little suitcase, so you can use them to park your car in the outskirts of the city and ride the couple km left to your destination, skipping traffic and parking fees. If you're not going to do large trips, it might even replace your car. Current ones get easily to 90 km/h, and exceed 100 km of range.
+They're way easier to carry around, like a little suitcase, so you can use them to park your car in the outskirts of the city and ride the couple km left to your destination, skipping traffic and parking fees. For short trips, it might even replace your car. Current ones get easily to 90 km/h, and exceed 100 km of range.
 
 ## What's the problem with current EUCs?
 Even though current EUCs are very cool and powerful, they're generally not resistant to crashes, the hardware and software is propietary, they can often be damaged by simple rain, can overheat easily with no sensors to prevent it, and have battery fires.
 
+I want to design an EUC that you can trust and repair yourself.
+
 I plan to use a sealed enclosure for the electronics and batteries, increase the redundancy when possible, increase the margins for error, and design the EUC so it's impossible to conceive a cutout as anything but a fatal error.
-
-
-
-
-
 
 
 ## Features
 - Sealed electronics and battery compartment
-    - You can throw it in the sea and won't have to worry about it.
-    - Probably an aluminum conducting chassis, or embedded heat sink.
-
+    > You can throw it in the sea and won't have to worry about it.
+- Use the chassis as a heatsink. Probably an aluminum chassis, or an embedded heat sink.
+- The handle will serve as a kickstand, and will unfold to serve as a metal arm that can be used to lock the EUC to a pole. It will also serve as a seat.
+- It will have the charger built-in
+- Consider self-leveling light that calculate the slope of the road based on the motor current draw and adjust the angle with a simple servo.
+- Battery pack with fireproof cover
+- Easy to assemble and disassemble
 
 
 ## References
-
 - Euc compare:
     - https://freshlycharged.com/euc-comparison-tool/
     - [EUC COMPARISON SPREADSHEET](https://onedrive.live.com/view.aspx?resid=5C7F7C96B9CB240D!453580&ithint=file%2Cxlsx&authkey=!AH72KLYXambSLHc&fbclid=IwAR0THVUZS6h6SZOj39XxWlnTjURvUr4NtPwmEg5kYFh51V8Ruyizmrrgx64)

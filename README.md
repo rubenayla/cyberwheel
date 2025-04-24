@@ -26,6 +26,9 @@ I want to design an EUC that you can trust and repair yourself.
 
 I plan to use a sealed enclosure for the electronics and batteries, increase the redundancy when possible, increase the margins for error, and design the EUC so it's impossible to conceive a cutout as anything but a fatal error.
 
+## Current state
+![](README/20250424212907.png)
+TODO: Video. Waiting for laser-cut chassis to do new version and tune the PID.
 
 ## Features
 - Sealed electronics and battery compartment
@@ -36,7 +39,6 @@ I plan to use a sealed enclosure for the electronics and batteries, increase the
 - Consider self-leveling light that calculate the slope of the road based on the motor current draw and adjust the angle with a simple servo.
 - Battery pack with fireproof cover
 - Easy to assemble and disassemble
-
 
 ## References
 - Euc compare:

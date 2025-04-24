@@ -7,6 +7,8 @@ Develop an Electric Unicycle that is truly practical for everyday use: reliable,
 
 For this, create an open-source community to design both the Hardware and Firmware, so they can be repaired and modified, free of proprietary restrictions.
 
+[Video Pitch: https://youtu.be/mN5FoosNMC0](https://youtu.be/mN5FoosNMC0)
+
 ## Current state
 ![](README/20250424212907.png)
 TODO: Video. Waiting for laser-cut chassis to do new version and tune the PID.

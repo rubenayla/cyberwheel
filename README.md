@@ -7,6 +7,10 @@ Develop an Electric Unicycle that is truly practical for everyday use: reliable,
 
 For this, create an open-source community to design both the Hardware and Firmware, so they can be repaired and modified, free of proprietary restrictions.
 
+## Current state
+![](README/20250424212907.png)
+TODO: Video. Waiting for laser-cut chassis to do new version and tune the PID.
+
 ## Goals
 I want to challenge the idea that, if your EUC cuts out, it's your fault. A well designed EUC should never cut power, even if you try. There must be margin for error.
 
@@ -25,10 +29,6 @@ Even though current EUCs are very cool and powerful, they're generally not resis
 I want to design an EUC that you can trust and repair yourself.
 
 I plan to use a sealed enclosure for the electronics and batteries, increase the redundancy when possible, increase the margins for error, and design the EUC so it's impossible to conceive a cutout as anything but a fatal error.
-
-## Current state
-![](README/20250424212907.png)
-TODO: Video. Waiting for laser-cut chassis to do new version and tune the PID.
 
 ## Features
 - Sealed electronics and battery compartment

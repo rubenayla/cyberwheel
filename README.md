@@ -3,7 +3,7 @@
 </p>
 
 ## Purpose
-Develop an Electric Unicycle that is truly practical for everyday use: reliable, rain- and impact-resistant, and durable over time.
+Make electric unicycles that are reliable for everyday use: waterproof, impact-resistant, durable over time, and easy to repair.
 
 For this, create an open-source community to design both the Hardware and Firmware, so they can be repaired and modified, free of proprietary restrictions.
 
@@ -42,6 +42,10 @@ I plan to use a sealed enclosure for the electronics and batteries, increase the
 - Battery pack with fireproof cover
 - Easy to assemble and disassemble
 
+## Target parameters for now
+About 50kmh, 80kg rider, hill climbing, 18" or 16", 20s 84V, no suspension, hollow bore motor preferrably
+> I think C38 or C30 motors match. Best is C38 high torque
+
 ## References
 - Euc compare:
     - https://freshlycharged.com/euc-comparison-tool/
@@ -55,6 +59,7 @@ I plan to use a sealed enclosure for the electronics and batteries, increase the
 - Check how his airplane is built, could take some ideas: https://www.youtube.com/@wairworthy/shorts
 - VESC
     - https://vesc-project.com/
+    - https://vesc-project.com/documentation
     - https://github.com/vedderb/bldc
     - [Balance App Info - VESC](https://vesc-project.com/node/2689)
         - https://t.me/joinchat/JP0KNxbguWM5KhHrT5_CYA
@@ -78,3 +83,4 @@ I plan to use a sealed enclosure for the electronics and batteries, increase the
 - https://www.instructables.com/DIY-Self-Balancing-One-Wheel-Vehicle/
 - https://ieeexplore.ieee.org/document/7860971
 - https://ieeexplore.ieee.org/document/7861046?section=abstract
+- https://clarkpads.com/

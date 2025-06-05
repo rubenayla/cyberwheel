@@ -141,7 +141,7 @@ Then limits, current voltage, and important RPM to not damage vesc.
 ---
 Next Level VESC board, noted here
 https://tronicsystems.com/products/x12
-## To finally remember the difference between isotype, logotype, isologo, imagotype...
+# To finally remember the difference between isotype, logotype, isologo, imagotype...
 iso = symbol
 logo = text
 type = meaningless thing to add when we need more roots to form the word
@@ -151,14 +151,14 @@ Just text: logo -> logotype
 Symbol and text as single entity: iso + logo -> isologo (not isologotype)
 Symbol + Text together: Just an image -> imagotype
 
-## 2025-03-25
+# 2025-03-25
 Using VESC 6.05 in smartphone app (commit e3d25e96)
 PROBLEM! I can configure roll angle errors, but it just continues running with state: fault
 
 
 - try sensorless, see the difference. maybe the hall sensors are bad?
 
-## 
+# 
 - Sensors:
     - Motor temperatures and voltages
         - 6 wires: +,-,temp,3halls
@@ -168,7 +168,7 @@ PROBLEM! I can configure roll angle errors, but it just continues running with s
     - Measure grounding, isolation?
 
 
-## Pseudocode for the state machine
+# Pseudocode for the state machine
 def continuous_monitoring():
 ```python
 if running:
@@ -229,7 +229,7 @@ elif stopped:
             ok # but activate alert to keep heating if close to 0ºC, up to about 10ºC?
 ```
 
-## Tyre
+# Tyre
 I want a balanced offroad capable 18x3 tire (18 diam, 3 width), with a motor like the C30, 84V, in the range of 2500W
 
 - Consider
@@ -244,11 +244,19 @@ I want a balanced offroad capable 18x3 tire (18 diam, 3 width), with a motor lik
     - Michelin City Pro 80/90-14 46P
         - 32€
 
-## stuff
+# stuff
 - [High Voltage Inter Lock](https://youtu.be/BC1zCC7CeX8)
 
 - V13 parts:
     - Raptor controller
     - Potted battery
     - Redundant Hall sensors
+
+# data about 16s batteries i have for testing
+16s, assume 1.5Ah each, 1.5Ah battery
+wheel diam 14in, 350mm
+
+
+# ideal motor for little focer
+i want high torque, not high speed, 20s 84V, 
 

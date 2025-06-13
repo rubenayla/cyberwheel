@@ -3,9 +3,20 @@
 </p>
 
 ## Purpose
-Develop an Electric Unicycle that is truly practical for everyday use: reliable, rain- and impact-resistant, and durable over time.
+Make electric unicycles that are reliable for everyday use: waterproof, impact-resistant, durable over time, and easy to repair.
 
 For this, create an open-source community to design both the Hardware and Firmware, so they can be repaired and modified, free of proprietary restrictions.
+
+[Video Pitch: https://youtu.be/mN5FoosNMC0](https://youtu.be/mN5FoosNMC0)
+
+## Current state
+![](README/20250424212907.png)
+TODO: Video. Waiting for laser-cut chassis to do new version and tune the PID.
+
+## Why EUCs?
+EUCs have a significantly bigger wheel than scooters (16 ~ 18"), which makes them more stable (yeah, It's hard to believe, but trust me), specially in rough terrain. They can go up curbs, down stairs, and sometimes even UP stairs. They're very pleasant to ride. Hands free, it feels like you're floating.
+
+They're way easier to carry around, like a little suitcase, so you can use them to park your car in the outskirts of the city and ride the couple km left to your destination, skipping traffic and parking fees. For short trips, it might even replace your car. Current ones get easily to 90 km/h, and exceed 100 km of range.
 
 ## Goals
 I want to challenge the idea that, if your EUC cuts out, it's your fault. A well designed EUC should never cut power, even if you try. There must be margin for error.
@@ -14,18 +25,12 @@ And this margin includes undervoltage AND overvoltage. Ideas to consider are res
 
 More on [requirements](./requirements.md).
 
-## Why EUCs?
-EUCs have a significantly bigger wheel than scooters (16 ~ 18"), which makes them more stable (yeah, It's hard to believe, but trust me), specially in rough terrain. They can go up curbs, down stairs, and sometimes even UP stairs. They're very pleasant to ride. Hands free, it feels like you're floating.
-
-They're way easier to carry around, like a little suitcase, so you can use them to park your car in the outskirts of the city and ride the couple km left to your destination, skipping traffic and parking fees. For short trips, it might even replace your car. Current ones get easily to 90 km/h, and exceed 100 km of range.
-
 ## What's the problem with current EUCs?
 Even though current EUCs are very cool and powerful, they're generally not resistant to crashes, the hardware and software is propietary, they can often be damaged by simple rain, can overheat easily with no sensors to prevent it, and have battery fires.
 
 I want to design an EUC that you can trust and repair yourself.
 
 I plan to use a sealed enclosure for the electronics and batteries, increase the redundancy when possible, increase the margins for error, and design the EUC so it's impossible to conceive a cutout as anything but a fatal error.
-
 
 ## Features
 - Sealed electronics and battery compartment
@@ -37,6 +42,9 @@ I plan to use a sealed enclosure for the electronics and batteries, increase the
 - Battery pack with fireproof cover
 - Easy to assemble and disassemble
 
+## Target parameters for now
+About 50kmh, 80kg rider, hill climbing, 18" or 16", 20s 84V, no suspension, hollow bore motor preferrably
+> I think C38 or C30 motors match. Best is C38 high torque
 
 ## References
 - Euc compare:
@@ -51,6 +59,7 @@ I plan to use a sealed enclosure for the electronics and batteries, increase the
 - Check how his airplane is built, could take some ideas: https://www.youtube.com/@wairworthy/shorts
 - VESC
     - https://vesc-project.com/
+    - https://vesc-project.com/documentation
     - https://github.com/vedderb/bldc
     - [Balance App Info - VESC](https://vesc-project.com/node/2689)
         - https://t.me/joinchat/JP0KNxbguWM5KhHrT5_CYA
@@ -74,3 +83,4 @@ I plan to use a sealed enclosure for the electronics and batteries, increase the
 - https://www.instructables.com/DIY-Self-Balancing-One-Wheel-Vehicle/
 - https://ieeexplore.ieee.org/document/7860971
 - https://ieeexplore.ieee.org/document/7861046?section=abstract
+- https://clarkpads.com/

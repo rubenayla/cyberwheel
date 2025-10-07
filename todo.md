@@ -1,5 +1,14 @@
-# ToDo
-- Buy protection gear
+try float app and balance packages, since refloat doesn't work. 
+
+save vesc config in the release, or in stuff, at least
+
+put the euc in fusion and add 3d printed designs to hold batteries and electronics in place.
+
+comprar: aislante mosfet electronica
+
+note all required connectors and stuff to buy
+
+
 - buy Shrink wrap (transparent? inspect all cells, visible from sides)
     - perimeter (2170 cells): 4*21.7 + 4 * 70 = 366.8mm
     - width of flat roll before contraction > 183.4mm to fit

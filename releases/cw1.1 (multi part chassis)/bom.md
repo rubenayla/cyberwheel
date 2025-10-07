@@ -1,45 +1,34 @@
-# BOM
-- [Herramientas](#herramientas)
-- Chasis corte laser doblado
-- Remaches
-- ESC (VESC)
-- [Batería](#batería)
-- BMS
-- Motor+llanta
-- Neumático
-- Conectores
-    - Fases motor
-    - Sensores motor (hall, temp)
-    - Carga EUC (cargador, en el futuro incorporado)
-    - Potencia batería (del BMS)
-    - Sensores batería (del BMS)
-- Cables de silicona de alta corriente y temperatura
-- Pads protección
-- [Tapa exterior](#tapa-exterior)
-- Lamina termica?
-    > Lo que permite enfriar los mosfets del Little FOCer sin que hagan un corto entre sí
+# Bill of Materials (BOM) - CW1.1
 
-# Herramientas
-- Básicas: multímetro, soldador estaño, flux, limpiadores, radial (discos de corte, desbastado), taladro (brocas metal)
-- Soldador electrodo (mejor tig o mig)
-- Remachadora
-- Crimpadoras
-    - Para JST-XH
-    - Para terminales de anillo (potencia)
-- Soldador por puntos para niquel batería (eg KWeld con su fuente de alimentación)
+## Complete EUC Manufacturing Cost
 
-# Batería
-- Soportes plástico
-- x? Celdas TODO cuantas
-- Niquel (o Niquel+cobre conjunto alta corriente)
-- Cinta Kapton
-- Fish paper
-- Termoretráctil
+| Component | Price (€) |
+|-----------|-----------|
+| Chassis (laser cut + bent) | 60 |
+| VESC Electronics (Little FOCer) | 350 |
+| Battery (purchased pre-made) | 700 |
+| BMS (Jiabaida) | 52 |
+| Motor + Rim | 200 |
+| Tire | 50 |
+| Assembly labor (30h × 15€/h) | 450 |
+| Exterior cover | 50 |
+| **TOTAL** | **1,912** |
 
-# Tapa exterior
-2 opciones: corte láser doblado (o radial y doblar a mano), o GFRP
+## Battery Sub-Components (If Self-Manufactured)
 
-Para GFRP fabricar un molde posiblemente en 3d o doblando chapa aluminio fina, y laminar fibra de vidrio aplicando epoxi con rodillo.
+| Subcomponent | Price (€) |
+|--------------|-----------|
+| 40× Molicel INR21700-P42A cells (3.85€/cell) | 154 |
+| Nickel-copper busbar connections (custom) | 34 |
+| Fish paper insulation | 10 |
+| Kapton tape | 5 |
+| Silicone power cable with crimped connector | 15 |
+| Plastic separators | 10 |
+| Labor cost (15€/h × 20h) | 300 |
+| **TOTAL** | **528** |
 
+## Cost Summary
 
-
+- **With purchased battery**: 1,912€
+- **With self-manufactured battery** (excluding all labor): 990€
+- **Total parts only** (no labor, self-made battery): 690€

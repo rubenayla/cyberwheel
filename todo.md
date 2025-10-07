@@ -1,4 +1,4 @@
-try float app and balance packages, since refloat doesn't work. 
+configure pid with balance app (refloat doesn't work)
 
 save vesc config in the release, or in stuff, at least
 

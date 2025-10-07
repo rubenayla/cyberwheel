@@ -10,6 +10,15 @@ Open-source electric unicycle (EUC) hardware and firmware project focused on rel
 - Auto-deploys to GitHub Pages via GitHub Actions on push to main
 - Site URL: https://rubenayla.github.io/cyberwheel/
 
+### GitHub Pages Deployment (Modern Method)
+- **Workflow**: `.github/workflows/deploy-docs.yml`
+- **Method**: Official GitHub Pages Actions (NOT legacy `mkdocs gh-deploy`)
+- **Build job**: Runs `mkdocs build` → outputs to `site/` → uploads artifact
+- **Deploy job**: Uses `actions/deploy-pages@v4` to deploy artifact via GitHub Pages API
+- **No gh-pages branch**: Does not use git push to gh-pages branch
+- **Repository Settings**: Must set Source to "GitHub Actions" in Settings → Pages
+- **Permissions**: Requires `pages: write` and `id-token: write` permissions
+
 ## Repository Structure
 ```
 cyberwheel/

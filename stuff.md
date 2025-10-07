@@ -258,5 +258,181 @@ wheel diam 14in, 350mm
 
 
 # ideal motor for little focer
-i want high torque, not high speed, 20s 84V, 
+i want high torque, not high speed, 20s 84V,
+
+# 2025-10-07 - Refloat Configuration Troubleshooting (VESC 6.05, Little FOCer V3.1)
+
+## Problem
+After installing Refloat package and running motor + IMU calibration, the EUC would not balance. Motor would spin in manual mode, but balance app wouldn't engage.
+
+## Symptoms
+- RT Data (main VESC): No faults (FAULT_CODE_NONE)
+- Refloat APPUI: State showed "Ready" but wouldn't transition to balancing
+- Requested current: always 0A (-.--A)
+- Filtered current: changed slightly when tilted
+- IMU: Working correctly, detecting inclination
+- Motor: Worked in manual control mode
+
+## What We Tried (and didn't work)
+
+### 1. SimpleStart Configuration
+- **Location:** Refloat Cfg → Startup → SimpleStart
+- **Action:** Enabled SimpleStart (should bypass sensor requirements for EUC without footpads)
+- **Result:** No change - still showed "Ready" but didn't balance
+- **Why it didn't work:** SimpleStart alone isn't enough - other settings block engagement
+
+### 2. Startup Pitch Tolerance
+- **Location:** Refloat Cfg → Startup → Startup Pitch Tolerance
+- **Action:** Tried increasing tolerance to ±10° or ±15°
+- **Result:** No change
+- **Why:** Not the issue - IMU was reading correctly
+
+### 3. Startup Click Current
+- **Location:** Refloat Cfg → Startup → Startup Click Current
+- **Action:** Increased to 3-5A for motor engagement pulse
+- **Result:** No effect
+- **Why:** Not the root cause - motor wasn't even trying to engage
+
+### 4. Roll Angle Fault
+- **Previous issue from 2025-03-25:** Had roll angle errors causing fault state
+- **This time:** No faults showing, so not the same issue
+- **Note:** For EUC (not onewheel), roll faults might trigger incorrectly - consider disabling
+
+### 5. App Configuration Investigation
+- **Confusion:** Initially looked at App Cfg → ADC (wrong place!)
+  - ADC app is for throttle control (e-bike, RC car) - NOT for balance
+  - Keep "App to Use" = "No App" for now (will need to change to "Balance" later)
+- **Also checked:**
+  - PAS (Pedal Assist System) - irrelevant for EUC
+  - PPM, UART options - not needed for balance
+
+## Key Findings
+
+### The Missing Piece: Safe Start Setting
+- **Location:** Refloat Cfg → Startup → Safe Start
+- **Was set to:** "Regular" (waiting for footpad sensor engagement)
+- **Should be:** "Disabled" (for EUC without footpad sensors)
+- **Action taken:** Set to "Disabled" and wrote configuration
+- **Result:** STILL DIDN'T WORK (as of writing this)
+
+### Understanding the App Selection
+- **Important discovery:** VESC needs an "App" selected to run autonomous control
+- **App Cfg → General → "App to Use"** must be set to **"Balance"** for Refloat to work
+- Manual mode bypasses app selection (for motor testing only)
+- Current setting: "No App" - explains why it won't balance!
+- **Options available:**
+  - No App (current - only manual control works)
+  - PPM (RC receiver input)
+  - ADC (analog throttle)
+  - UART (serial communication)
+  - Balance ← **NEED THIS ONE**
+  - PPM and UART
+
+## Configuration That Should Work (untested as of writing)
+1. ✓ Motor calibration done
+2. ✓ IMU calibration done
+3. ✓ Refloat package installed
+4. ✓ SimpleStart enabled (Refloat Cfg → Startup)
+5. ✓ Safe Start = Disabled (Refloat Cfg → Startup)
+6. ⚠️ App to Use = "Balance" (App Cfg → General) - **LIKELY THE FIX**
+7. Write motor configuration
+8. Test
+
+## Important Lessons Learned
+
+### 1. Refloat vs Balance vs App Settings
+- **Refloat** = Package that enhances/replaces the Balance app
+- **Balance** = The VESC application mode for self-balancing
+- **App to Use** = Must be set to "Balance" for Refloat to actually run
+- These are separate settings that all need to be configured correctly
+
+### 2. ADC Confusion
+- **Refloat ADC inputs** (for footpad sensors) ≠ **App Cfg → ADC** (for throttle control)
+- Don't touch App Cfg → ADC - keep it "Off"
+- Refloat has its own ADC/switch settings in Refloat Cfg
+
+### 3. SimpleStart is Not Enough
+- Enabling SimpleStart doesn't automatically bypass all safety checks
+- Also need:
+  - Safe Start = Disabled
+  - Probably other switch/sensor settings
+  - App to Use = Balance
+
+### 4. RT Data Navigation
+- **Main RT Data** (VESC): Shows motor/electrical data (voltage, current, RPM, faults)
+- **Refloat APPUI** (Refloat Cfg → APPUI): Shows balance-specific data (State, Pitch, Roll, etc.)
+- Need to use Refloat APPUI for balance troubleshooting
+
+## Previous Issue Reference (2025-03-25)
+- Using VESC 6.05 in smartphone app (commit e3d25e96)
+- Problem: Could configure roll angle errors, but continued running with state: fault
+- Resolution: Not documented (need to note solution if this happens again)
+
+## USB Driver Notes (related troubleshooting)
+- Little FOCer V3.1 uses Silicon Labs CP2102 USB-to-UART chip
+- macOS needs CP210x VCP driver installed
+- Download from: https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers
+- After install + reboot: `/dev/tty.SLAB_USBtoUART` appears
+- **Why custom driver needed?**
+  - CP2102 doesn't use USB CDC (Communications Device Class) standard
+  - USB is universal physically, but each chip needs translation driver
+  - CDC-compatible chips work without custom drivers, but CP2102 predates widespread CDC adoption
+  - Tradeoff: Better performance/reliability vs one-time driver install
+
+## THE SOLUTION ✓
+**Setting App to Use = "Balance" worked on first try!**
+
+After changing App Cfg → General → "App to Use" from "No App" to "Balance" and writing configuration, the EUC immediately started balancing.
+
+### Issue After Fix: Oscillation at ~5Hz
+- **Symptom:** EUC balances but oscillates/wobbles at approximately 5Hz
+- **Cause:** PID tuning not optimized for this motor/wheel combination
+- **Solution needed:** Tune PID parameters in Refloat Cfg
+
+## Normal PID Values for EUC (Refloat)
+**NOTE:** These values assume standard Refloat scaling (0-10 typical range). Your version might use different scaling (0-100 or 0-1000). Check what scale your settings use!
+
+### Expected Starting Values (Standard Scaling):
+- **P (Proportional):** 2.0 - 3.0
+  - Range: 1.5 - 4.0
+  - Effect: Response speed. Too high = oscillation, too low = sluggish/won't balance
+
+- **I (Integral):** 0.03 - 0.05
+  - Range: 0.02 - 0.08
+  - Effect: Corrects steady-state error. Too high = slow oscillation, too low = drift
+
+- **D (Derivative):** 0.05 - 0.10 (for more rigidity, can go to 0.15-0.20)
+  - Range: 0.01 - 0.20
+  - Effect: Dampens oscillations AND adds rigidity. Too high = jittery, too low = overshoots/oscillates
+
+### Current Setup (2025-10-07):
+- **D set to ~20** - Either:
+  - Version uses different scaling (20 might equal 0.2 in standard scaling), OR
+  - Value is extremely high (needs verification next session)
+- **To test next session:** Try standard values above and see if behavior changes
+- Document actual P, I, D values being used and their effects
+
+### For 5Hz Oscillation Fix:
+- **Primary fix:** Adjust P and D gains
+- **Secondary option:** Add filtering/lower filter frequency
+- Adjust in small increments (10-20% at a time)
+- Test after each change
+
+### Tuning Process:
+1. Start with P: Reduce until oscillation stops, then increase until barely starts again
+2. Add D: Increase to dampen remaining oscillation
+3. Fine-tune I: Adjust for steady-state position holding
+4. Iterate
+
+## Next Steps (when resuming)
+1. ~~Confirm App to Use = "Balance" in App Cfg → General~~ ✓ DONE - WORKED!
+2. Tune PID values to eliminate 5Hz oscillation
+3. Document final PID values that work for this setup
+
+## Firmware & Hardware
+- VESC Firmware: 6.05
+- Controller: Little FOCer V3.1 (84V 20S capable)
+- Package: Refloat (latest version as of Oct 2025)
+- Motor: [Add motor model if known]
+- Battery: 16S test pack (1.5Ah cells, ~60V nominal)
 

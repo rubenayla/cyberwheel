@@ -1,0 +1,9 @@
+[project]
+name = "cyberwheel"
+version = "0.1.0"
+description = "Open-source electric unicycle hardware and firmware documentation"
+requires-python = ">=3.12"
+dependencies = [
+    "mkdocs>=1.6.1",
+    "mkdocs-material>=9.6.21",
+]

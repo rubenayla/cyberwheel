@@ -1,0 +1,72 @@
+site_name: Cyberwheel
+site_description: Open-source electric unicycle hardware and firmware
+site_author: Ruben Ayla
+repo_url: https://github.com/rubenayla/CYBERWHEEL
+repo_name: rubenayla/CYBERWHEEL
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  logo: assets/logo/isologo_black.png
+  favicon: assets/logo/isologo_black.png
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      primary: blue grey
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: blue grey
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+
+plugins:
+  - search
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.arithmatex:
+      generic: true
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+extra_javascript:
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Requirements: getting-started/requirements.md
+      - Testing: getting-started/testing.md
+  - Design:
+      - Battery System: design/battery.md
+  - Releases:
+      - CW1.0: releases/cw1.0.md
+      - CW1.1: releases/cw1.1.md
+  - References: references.md

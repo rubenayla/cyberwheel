@@ -8,7 +8,7 @@ Open-source electric unicycle (EUC) hardware and firmware project focused on rel
 - Dependencies managed with `uv` and `pyproject.toml`
 - Documentation source in `docs/`
 - Auto-deploys to GitHub Pages via GitHub Actions on push to main
-- Site URL: https://rubenayla.github.io/CYBERWHEEL/
+- Site URL: https://rubenayla.github.io/cyberwheel/
 
 ## Repository Structure
 ```

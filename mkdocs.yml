@@ -1,8 +1,8 @@
 site_name: Cyberwheel
 site_description: Open-source electric unicycle hardware and firmware
 site_author: Ruben Ayla
-repo_url: https://github.com/rubenayla/CYBERWHEEL
-repo_name: rubenayla/CYBERWHEEL
+repo_url: https://github.com/rubenayla/cyberwheel
+repo_name: rubenayla/cyberwheel
 edit_uri: edit/main/docs/
 
 theme:

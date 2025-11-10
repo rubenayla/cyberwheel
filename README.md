@@ -10,12 +10,14 @@ Open-source electric unicycle hardware and firmware.
 
 Visit our documentation site: **[https://rubenayla.github.io/cyberwheel/](https://rubenayla.github.io/cyberwheel/)**
 
+## 🎥 Pitch Video
+
+Watch our project pitch: **[https://youtu.be/mN5FoosNMC0](https://youtu.be/mN5FoosNMC0)**
+
 ## Purpose
 Make electric unicycles that are reliable for everyday use: waterproof, impact-resistant, durable over time, and easy to repair.
 
 For this, create an open-source community to design both the Hardware and Firmware, so they can be repaired and modified, free of proprietary restrictions.
-
-[Video Pitch: https://youtu.be/mN5FoosNMC0](https://youtu.be/mN5FoosNMC0)
 
 ## Repository Structure
 

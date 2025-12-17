@@ -1,3 +1,7 @@
+Hacer el diseño en fusion 360
+Diseñar y fabricar la tapa superior
+Diseñar soporte para la batería y la electrónica
+
 base datos con contactos, excel o algo. y de donde ha salido.
 power ui? excel vale
 

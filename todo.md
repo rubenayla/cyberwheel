@@ -1,4 +1,12 @@
+base datos con contactos, excel o algo. y de donde ha salido.
+power ui? excel vale
+
+validar coste y precios, prototipo y encuesta, contactos proveedores
+
+create an about page in cyberwheel docs
+
 configure pid with balance app (refloat doesn't work)
+create video about the project
 
 save vesc config in the release, or in stuff, at least
 
@@ -38,4 +46,3 @@ note all required connectors and stuff to buy
 # Tests
 - Try battery on top and electronics at the sides. It's waaay simpler that way. See if it's problematic the high center of mass.
 - Measure and graph wobble speed vs center of mass. Ask mechanics techaers.
-

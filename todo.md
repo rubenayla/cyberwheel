@@ -1,3 +1,7 @@
+user vs model parameters, difference? why they get added as user
+
+check dimensions
+
 Hacer el diseño en fusion 360
 Diseñar y fabricar la tapa superior
 Diseñar soporte para la batería y la electrónica
